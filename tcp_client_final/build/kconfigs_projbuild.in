@@ -1,0 +1,7 @@
+source "/Users/karlieli/esp/esp-idf/components/bootloader/Kconfig.projbuild"
+source "/Users/karlieli/esp/esp-idf/components/esp_app_format/Kconfig.projbuild"
+source "/Users/karlieli/esp/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "/Users/karlieli/esp/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "/Users/karlieli/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+source "/Users/karlieli/Documents/VPU-feather/VPU_ESP32/tcp_client_final/main/Kconfig.projbuild"
+source "/Users/karlieli/esp/esp-idf/examples/common_components/protocol_examples_common/Kconfig.projbuild"

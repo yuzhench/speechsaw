@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "__locale": "c",
+        "sdkconfig.h": "c",
+        "__bit_reference": "c",
+        "__hash_table": "c",
+        "__string": "c",
+        "cstring": "c",
+        "locale": "c",
+        "string": "c",
+        "vector": "c",
+        "algorithm": "c"
+    }
+}

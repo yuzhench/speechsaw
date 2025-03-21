@@ -1,0 +1,425 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x16f8
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xbfc
+load:0x403cc700,len:0x2ef0
+entry 0x403c9904
+[0;32mI (27) boot: ESP-IDF v5.2-dev-350-g56123c52aa-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct 25 2024 14:48:20[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=22300h (140032) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00032328 vaddr=3fc96d00 size=0441ch ( 17436) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0003674c vaddr=40374000 size=098cch ( 39116) load[0m
+[0;32mI (141) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=80ae4h (527076) map[0m
+[0;32mI (236) esp_image: segment 4: paddr=000c0b0c vaddr=4037d8cc size=093e0h ( 37856) load[0m
+[0;32mI (253) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (264) cpu_start: Multicore app[0m
+[0;32mI (264) cpu_start: Pro cpu up.[0m
+[0;32mI (265) cpu_start: Starting app cpu, entry point is 0x40375390[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (283) cpu_start: Pro cpu start user code[0m
+[0;32mI (283) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (283) cpu_start: Application information:[0m
+[0;32mI (286) cpu_start: Project name:     tcp_client[0m
+[0;32mI (291) cpu_start: App version:      2c8a2d6-dirty[0m
+[0;32mI (296) cpu_start: Compile time:     Oct 25 2024 14:48:12[0m
+[0;32mI (303) cpu_start: ELF file SHA256:  744c40746c64683f...[0m
+[0;32mI (309) cpu_start: ESP-IDF:          v5.2-dev-350-g56123c52aa-dirty[0m
+[0;32mI (315) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (320) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (325) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (330) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (337) heap_init: At 3FC9EA78 len 0004AC98 (299 KiB): DRAM[0m
+[0;32mI (343) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (350) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (356) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (363) spi_flash: detected chip: generic[0m
+[0;32mI (367) spi_flash: flash io: dio[0m
+[0;33mW (371) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (384) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (391) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (398) app_start: Starting scheduler on CPU0[0m
+[0;32mI (403) app_start: Starting scheduler on CPU1[0m
+[0;32mI (403) main_task: Started on CPU0[0m
+[0;32mI (413) main_task: Calling app_main()[0m
+[0;32mI (413) gpio: GPIO[8]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (443) example_connect: Start example_connect.[0m
+[0;32mI (443) pp: pp rom version: e7ae62f[0m
+[0;32mI (443) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (453) wifi:wifi driver task: 3fca88c8, prio:23, stack:6656, core=0[0m
+[0;32mI (463) wifi:wifi firmware version: 067d027[0m
+[0;32mI (463) wifi:wifi certification version: v7.0[0m
+[0;32mI (463) wifi:config NVS flash: enabled[0m
+[0;32mI (463) wifi:config nano formating: disabled[0m
+[0;32mI (473) wifi:Init data frame dynamic rx buffer num: 64[0m
+[0;32mI (473) wifi:Init management frame dynamic rx buffer num: 64[0m
+[0;32mI (483) wifi:Init management short buffer num: 32[0m
+[0;32mI (483) wifi:Init dynamic tx buffer num: 64[0m
+[0;32mI (483) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (493) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (493) wifi:Init static rx buffer num: 16[0m
+[0;32mI (503) wifi:Init dynamic rx buffer num: 64[0m
+[0;32mI (503) wifi_init: rx ba win: 32[0m
+[0;32mI (503) wifi_init: tcpip mbox: 32[0m
+[0;32mI (513) wifi_init: udp mbox: 6[0m
+[0;32mI (513) wifi_init: tcp mbox: 64[0m
+[0;32mI (523) wifi_init: tcp tx win: 65535[0m
+[0;32mI (523) wifi_init: tcp rx win: 65535[0m
+[0;32mI (523) wifi_init: tcp mss: 1440[0m
+[0;32mI (533) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (533) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (543) phy_init: phy_version 600,8dd0147,Mar 31 2023,16:34:12[0m
+[0;32mI (583) wifi:mode : sta (34:85:18:50:81:30)[0m
+[0;32mI (583) wifi:enable tsf[0m
+[0;32mI (583) example_connect: Connecting to yxyx...[0m
+[0;32mI (583) example_connect: Waiting for IP(s)[0m
+[0;32mI (2993) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (3713) wifi:state: init -> auth (b0)[0m
+[0;32mI (3713) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3723) wifi:state: assoc -> run (10)[0m
+[0;32mI (3733) wifi:connected with yxyx, aid = 2, channel 11, BW20, bssid = 94:83:c4:06:15:4a[0m
+[0;32mI (3733) wifi:security: WPA2-PSK, phy: bgn, rssi: -36[0m
+[0;32mI (3733) wifi:pm start, type: 1[0m
+
+[0;32mI (3743) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (3743) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4753) esp_netif_handlers: example_netif_sta ip: 192.168.8.120, mask: 255.255.255.0, gw: 192.168.8.1[0m
+[0;32mI (4753) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.8.120[0m
+[0;32mI (5443) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:3685:18ff:fe50:8130, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5443) example_common: Connected to example_netif_sta[0m
+[0;32mI (5453) example_common: - IPv4 address: 192.168.8.120,[0m
+[0;32mI (5453) example_common: - IPv6 address: fe80:0000:0000:0000:3685:18ff:fe50:8130, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5463) main_task: Returned from app_main()[0m
+[0;32mI (5683) channel: timestamp: 0[0m
+sending 5 data[0;32mI (5683) tcp connection: Socket created, Nagle Algorithm disabled[0m
+[0;32mI (8963) wifi:<ba-add>idx:0 (ifx:0, 94:83:c4:06:15:4a), tid:0, ssn:1, winSize:64[0m
+[0;31mE (52533) tcp connection: Socket unable to connect: errno 113[0m
+sending 5 data[0;32mI (52533) tcp connection: Socket created, Nagle Algorithm disabled[0m
+[0;32mI (67543) tcp connection: Successfully connected[0m
+[0;32mI (67543) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (67543) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (67553) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (67563) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (67563) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (67573) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (67583) channel: timestamp: 213[0m
+sending 5 data[0;32mI (67583) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (67593) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (67603) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (67603) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (67613) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (67623) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (67703) channel: timestamp: 213[0m
+sending 5 data[0;32mI (67703) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (67703) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (67713) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (67723) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (67733) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (67733) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (67913) channel: timestamp: 213[0m
+sending 5 data[0;32mI (67913) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (67923) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (67923) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (67933) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (67943) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (67943) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (68133) channel: timestamp: 213[0m
+sending 5 data[0;32mI (68133) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (68133) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (68143) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (68143) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (68153) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (68163) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (68343) channel: timestamp: 213[0m
+sending 5 data[0;32mI (68343) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (68343) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (68353) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (68363) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (68373) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (68373) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (68553) channel: timestamp: 213[0m
+sending 5 data[0;32mI (68553) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (68563) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (68563) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (68573) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (68583) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (68583) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (68763) channel: timestamp: 213[0m
+sending 5 data[0;32mI (68773) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (68773) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (68773) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (68783) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (68793) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (68803) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (68983) channel: timestamp: 213[0m
+sending 5 data[0;32mI (68983) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (68983) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (68993) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (69003) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (69013) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (69013) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (69193) channel: timestamp: 213[0m
+sending 5 data[0;32mI (69193) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (69203) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (69203) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (69213) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (69223) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (69223) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (69403) channel: timestamp: 213[0m
+sending 5 data[0;32mI (69413) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (69413) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (69413) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (69423) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (69433) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (69443) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (69623) channel: timestamp: 213[0m
+sending 5 data[0;32mI (69623) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (69623) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (69633) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (69633) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (69643) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (69653) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (69833) channel: timestamp: 213[0m
+sending 5 data[0;32mI (69833) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (69843) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (69843) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (69853) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (69863) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (69863) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (70043) channel: timestamp: 213[0m
+sending 5 data[0;32mI (70053) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (70053) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (70053) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (70063) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (70073) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (70083) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (70263) channel: timestamp: 213[0m
+sending 5 data[0;32mI (70263) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (70263) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (70273) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (70283) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (70283) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (70293) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (70473) channel: timestamp: 213[0m
+sending 5 data[0;32mI (70473) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (70483) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (70483) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (70493) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (70503) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (70503) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (70683) channel: timestamp: 213[0m
+sending 5 data[0;32mI (70683) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (70693) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (70693) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (70703) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (70713) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (70723) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (70903) channel: timestamp: 213[0m
+sending 5 data[0;32mI (70903) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (70903) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (70913) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (70913) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (70923) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (70933) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (71113) channel: timestamp: 213[0m
+sending 5 data[0;32mI (71113) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (71113) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (71123) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (71133) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (71143) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (71143) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (71323) channel: timestamp: 213[0m
+sending 5 data[0;32mI (71323) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (71333) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (71333) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (71343) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (71353) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (71363) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (71543) channel: timestamp: 213[0m
+sending 5 data[0;32mI (71543) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (71543) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (71553) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (71553) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (71563) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (71573) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (71753) channel: timestamp: 213[0m
+sending 5 data[0;32mI (71753) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (71753) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (71763) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (71773) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (71783) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (71783) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (71963) channel: timestamp: 213[0m
+sending 5 data[0;32mI (71963) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (71973) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (71973) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (71983) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (71993) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (71993) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (72173) channel: timestamp: 213[0m
+sending 5 data[0;32mI (72183) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (72183) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (72193) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (72193) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (72203) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (72213) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (72393) channel: timestamp: 213[0m
+sending 5 data[0;32mI (72393) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (72393) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (72403) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (72413) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (72413) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (72423) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (72603) channel: timestamp: 213[0m
+sending 5 data[0;32mI (72603) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (72613) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (72613) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (72623) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (72633) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (72633) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (72813) channel: timestamp: 213[0m
+sending 5 data[0;32mI (72823) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (72823) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (72823) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (72833) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (72843) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (72853) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (73033) channel: timestamp: 213[0m
+sending 5 data[0;32mI (73033) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (73033) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (73043) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (73043) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (73063) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (73063) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (73243) channel: timestamp: 213[0m
+sending 5 data[0;32mI (73243) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (73253) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (73253) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (73263) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (73273) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (73273) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (73453) channel: timestamp: 213[0m
+sending 5 data[0;32mI (73463) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (73463) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (73463) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (73473) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (73483) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (73493) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (73673) channel: timestamp: 213[0m
+sending 5 data[0;32mI (73673) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (73673) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (73683) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (73683) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (73693) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (73703) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (73883) channel: timestamp: 213[0m
+sending 5 data[0;32mI (73883) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (73893) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (73893) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (73903) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (73913) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (73913) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (74093) channel: timestamp: 213[0m
+sending 5 data[0;32mI (74093) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (74103) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (74103) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (74113) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (74123) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (74133) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (74313) channel: timestamp: 213[0m
+sending 5 data[0;32mI (74313) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (74313) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (74323) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (74323) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (74333) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (74343) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (74523) channel: timestamp: 213[0m
+sending 5 data[0;32mI (74523) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (74523) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (74533) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (74543) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (74553) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (74553) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (74733) channel: timestamp: 213[0m
+sending 5 data[0;32mI (74733) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (74743) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (74743) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (74753) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (74763) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (74773) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (74953) channel: timestamp: 213[0m
+sending 5 data[0;32mI (74953) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (74953) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (74963) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (74963) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (74973) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (74983) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (75163) channel: timestamp: 213[0m
+sending 5 data[0;32mI (75163) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (75163) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (75173) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (75183) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (75193) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (75193) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (75373) channel: timestamp: 213[0m
+sending 5 data[0;32mI (75373) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (75383) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (75383) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (75393) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (75403) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (75403) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (75583) channel: timestamp: 213[0m
+sending 5 data[0;32mI (75593) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (75593) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (75603) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (75603) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (75613) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (75623) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (75803) channel: timestamp: 213[0m
+sending 5 data[0;32mI (75803) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (75803) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (75813) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (75823) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (75823) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (75833) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (76013) channel: timestamp: 213[0m
+sending 5 data[0;32mI (76013) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (76023) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (76023) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (76033) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (76043) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (76043) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (76223) channel: timestamp: 213[0m
+sending 5 data[0;32mI (76233) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (76233) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (76233) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (76243) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (76253) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (76263) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (76443) channel: timestamp: 213[0m
+sending 5 data[0;32mI (76443) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (76443) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (76453) tcp connection: 4/4 bytes sent:sent size is 4[0m
+sending 5 data[0;32mI (76463) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (76463) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (76473) tcp connection: 4/4 bytes sent:sent size is 4[0m
+[0;32mI (76653) channel: timestamp: 213[0m
+sending 5 data[0;32mI (76653) tcp connection: 10/10 bytes sent:sent size is 10[0m
+sending 10230 data[0;32mI (76663) tcp connection: 20460/20460 bytes sent:sent size is 20460[0m
+sending 2 data[0;32mI (76663) tcp connection: 4/
