@@ -56,6 +56,6 @@ if __name__ == "__main__":
     cuda_available = torch.cuda.is_available()
     device = torch.device("cuda" if cuda_available else "cpu")
     print("device is: ", device)
-    path_to_wav = "1.wav"   
+    path_to_wav = "mar_14_this_is_a_test_amplifier_reduce_noise.wav"   
     text_output = transcribe_audio(path_to_wav, device=device)  
     print("Transcribed Text:", text_output)
