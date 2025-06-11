@@ -1,1 +1,1 @@
-<embed src="docs/SpeechSaw.pdf" type="application/pdf" width="100%" height="600px" />
+[📄 Paper](SpeechSaw.pdf)
